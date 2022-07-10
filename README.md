@@ -52,5 +52,67 @@ copier tous les dossiers et fichiers du répertoire ./angular-digimon-   SAUF do
 
 coller dans répertoire ./angular-digimon
 
+Sur Git Bash 
+
+aller sur le répertoire ./angular-digimon
+
+git status
+
+git add .
+
+git commit -m "message"
+
+git push
+
+Dans PowerShell aller sur le répertoire ./angular-digimon
+
+relancer : ng serve --open
+
+Ouvrir le projet sur VS code
+
+ouvrir un nouveau PowerShell
+
+Aller au répertoire ./angular-digimon
+
+créer le component digimon-index avec la commande
+
+ng g c digimon-index
+
+ng g c navbar
+
+installer bootstrap tapper la commande
+npm i bootstrap
+
+Créer dossier ./src/styles
+dans le dossier créer les fichiers :
+ general.scss  (pour code scss général : body ...)
+ _variables.scss (pour les variables scss)
+ 
+Dans le fichier styles.scss faire les imports : 
+@import "~bootstrap"; (pour profité du 
+@import "styles/variables";
+@import "styles/general";
+
+Créer nouveau dossier ./src/services
+puis cmd : cd services
+Créer les services :
+http-digimon.services
+url-api-constantes
+
+avec les commandes :
+ng g s http-digimon.services
+ng g s url-api-constantes
+
+
+
+
+
+
+
+
+
+
+
+
 
 
