@@ -76,7 +76,39 @@ ex:
     </nav>
 </header> 
 
-les liens routerLink fonctionnent grace aux imports et path fait précédemment dans app-routing.module.ts
+les liens routerLink fonctionnent grâce aux imports et path fait précédemment dans app-routing.module.ts
+
+
+### Ajouter une image 
+ex: 
+dans digimon-home.component.html ajouter la balise :
+    
+	<img src="assets/digiadven99_4suw.jpg" class="img-fluid">
+
+### Créer un interface digimon.ts
+Dans PowerShell aller dans le répertoire models créer l'interface avec la cmd :
+ng g i digimon
+
+Dans digimon.ts coder:
+
+export interface Digimon {
+    img: string;
+    level: string;
+    name: string;
+}
+
+
+### Créer un Service http-digimon
+Dans PowerShell aller dans répertoire services et lancer la commande :
+ng g s http-digimon
+
+puis implémenter getDigimons() et get DigimonsByLevel()
+
+### Dans digimon-index.component.ts
+implémenter ngOnInit(), ngAfterViewInit() et ngOnDestroy()
+
+
+
 
 
 

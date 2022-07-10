@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpDigimonService} from "../../services/http-digimon.service";
+import {ActivatedRoute} from "@angular/router";
+import {Digimon} from "../../models/digimon";
 
 @Component({
   selector: 'app-digimon-level',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DigimonLevelComponent implements OnInit {
 
-  constructor() { }
+  digimons: Array<Digimon> = [];
+
+  constructor(
+    private httpDigimon: HttpDigimonService,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    // this.activatedRoute.params.subscribe((params) => {
+    //   this.httpDigimon.getDigimonsByLevel(params.digimonLevel).subscribe((jsonDigimon) => {
+    //     this.digimons = jsonDigimon;
+    //   })
+    // });
   }
 
 }
