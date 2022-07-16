@@ -2,12 +2,18 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import {HttpDigimonService} from "../../services/http-digimon.service";
 import {Digimon} from "../../models/digimon";
 import { Router } from '@angular/router';
+import { reduce } from 'rxjs';
 
 
 @Component({
   selector: 'app-digimon-index',
   templateUrl: './digimon-index.component.html',
-  styleUrls: ['./digimon-index.component.scss']
+  styleUrls: ['./digimon-index.component.scss'],
+  // styles: [
+  //   `.bg-white {
+  //     color : red;
+  //   }`
+  // ]
 })
 export class DigimonIndexComponent implements OnInit, AfterViewInit, OnDestroy {
 
