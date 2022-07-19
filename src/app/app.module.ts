@@ -9,6 +9,7 @@ import { DigimonIndexComponent } from './digimon-index/digimon-index.component';
 import { DigimonLevelComponent } from './digimon-level/digimon-level.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DigimonTableComponent } from './digimon-table/digimon-table.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     DigimonHomeComponent,
     DigimonIndexComponent,
-    DigimonLevelComponent
+    DigimonLevelComponent,
+    DigimonTableComponent
   ],
   imports: [
     BrowserModule,
