@@ -1,7 +1,29 @@
 body {
-    background: #7fa6f0;;
+    background: $default-background;
+}
+
+.navbar-light {
+    background: $d-bg-l10;
+
+}
+.card {
+    background: $d-bg-l20;
+}
+
+.btn-primary {
+    background: $d-bg-d5;
+    border-color: $d-bg-d5;
+    color: $d-txt-blk;
 }
 
 .bg-white {
     background: white;
+}
+
+.hotpink {
+    background: hotpink;
+}
+
+.yellowgreen {
+    background: yellowgreen;
 }

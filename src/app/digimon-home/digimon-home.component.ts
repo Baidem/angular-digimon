@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DigimonHomeComponent implements OnInit {
 
   title = 'digimon-home';
+  image = 'assets/digiadven99_4suw.jpg';
 
   constructor() { }
 

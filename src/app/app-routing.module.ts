@@ -8,6 +8,8 @@ import { DigimonLevelComponent } from "./digimon-level/digimon-level.component";
 
 const routes: Routes = [
    { path: '', component: DigimonHomeComponent },
+   { path: 'home', component: DigimonHomeComponent },
+   { path: 'table', component: DigimonHomeComponent },
    { path: 'digidex', component: DigimonIndexComponent },
    { path: 'digidex/:digimonLevel', component: DigimonLevelComponent },
 

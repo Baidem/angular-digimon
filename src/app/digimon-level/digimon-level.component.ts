@@ -14,15 +14,14 @@ export class DigimonLevelComponent implements OnInit {
 
   constructor(
     private httpDigimon: HttpDigimonService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
-    // this.activatedRoute.params.subscribe((params) => {
-    //   this.httpDigimon.getDigimonsByLevel(params.digimonLevel).subscribe((jsonDigimon) => {
-    //     this.digimons = jsonDigimon;
-    //   })
-    // });
+    this.activatedRoute.params.subscribe((params) => {
+      this.httpDigimon.getDigimonsByLevel(params['digimonLevel']).subscribe((jsonDigimon) => {
+        this.digimons = jsonDigimon;
+      })
+    });
   }
-
 }

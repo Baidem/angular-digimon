@@ -9,11 +9,6 @@ import { reduce } from 'rxjs';
   selector: 'app-digimon-index',
   templateUrl: './digimon-index.component.html',
   styleUrls: ['./digimon-index.component.scss'],
-  // styles: [
-  //   `.bg-white {
-  //     color : red;
-  //   }`
-  // ]
 })
 export class DigimonIndexComponent implements OnInit, AfterViewInit, OnDestroy {
 

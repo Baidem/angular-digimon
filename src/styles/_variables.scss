@@ -1,0 +1,11 @@
+$default-background: #7fa6f0;
+
+$d-bg-l10: lighten($default-background, 10%);
+$d-bg-l15: lighten($default-background, 15%);
+$d-bg-l20: lighten($default-background, 20%);
+$d-bg-l25: lighten($default-background, 25%);
+
+$d-bg-d5: darken($default-background, 5%);
+$d-bg-d15: darken($default-background, 15%);
+
+$d-txt-blk: #212529;
