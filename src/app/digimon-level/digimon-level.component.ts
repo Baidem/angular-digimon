@@ -14,7 +14,7 @@ export class DigimonLevelComponent implements OnInit {
 
   constructor(
     private httpDigimon: HttpDigimonService,
-    private activatedRoute: ActivatedRoute,
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit(): void {

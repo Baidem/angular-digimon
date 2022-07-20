@@ -4,6 +4,7 @@ import { DigimonHomeComponent } from "./digimon-home/digimon-home.component";
 import { DigimonIndexComponent } from "./digimon-index/digimon-index.component";
 import { DigimonLevelComponent } from "./digimon-level/digimon-level.component";
 import { DigimonTableComponent } from "./digimon-table/digimon-table.component";
+import { DigimonTableByLevelComponent } from "./digimon-table-by-level/digimon-table-by-level.component";
 
 
 
@@ -13,6 +14,7 @@ const routes: Routes = [
    { path: 'table', component: DigimonTableComponent },
    { path: 'digidex', component: DigimonIndexComponent },
    { path: 'digidex/:digimonLevel', component: DigimonLevelComponent },
+   { path: 'digidex/table/:digimonLevel', component: DigimonTableByLevelComponent },
 
 ];
 

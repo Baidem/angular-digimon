@@ -1,8 +1,8 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light ">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="">
-        <img [src]="logo" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+      <a class="navbar-brand p-0" routerLink="">
+        <img [src]="logo" alt="logo" width="60" height="24" class="d-inline-block align-text-top">
         DIGIMON</a>
       <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
         aria-label="Toggle navigation" (click)="collapsed = !collapsed">
@@ -27,12 +27,12 @@
               by level
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" [style.display]="dropped ? 'none' : 'block'">
-              <li><a class="dropdown-item" routerLink="/digidex/Fresh">Fresh</a></li>
-              <li><a class="dropdown-item" routerLink="/digidex/In Training">In Training</a></li>
-              <li><a class="dropdown-item" routerLink="/digidex/Rookie">Rookie</a></li>
-              <li><a class="dropdown-item" routerLink="/digidex/Champion">Champion</a></li>
-              <li><a class="dropdown-item" routerLink="/digidex/Ultimate">Ultimate</a></li>
-              <li><a class="dropdown-item" routerLink="/digidex/Mega">Mega</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/table/Fresh">Fresh</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/table/In Training">In Training</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/table/Rookie">Rookie</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/table/Champion">Champion</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/table/Ultimate">Ultimate</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/table/Mega">Mega</a></li>
             </ul>
           </li>
         </ul>

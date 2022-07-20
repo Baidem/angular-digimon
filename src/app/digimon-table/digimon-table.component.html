@@ -1,4 +1,4 @@
-<div class="container" ><!--*ngIf=""-->
+<div class="container" >
     <table class="table table-striped table-hover">
         <thead>
             <tr>
@@ -18,7 +18,7 @@
                 <tr>
                     <td>{{digimon.name}}</td>
                     <td>{{digimon.img}}</td>
-                    <td class="pointer" routerLink="/digidex/{{digimon.level}}">{{digimon.level}}</td>
+                    <td class="pointer" routerLink="/digidex/table/{{digimon.level}}">{{digimon.level}}</td>
                 </tr>
 
             </ng-container>
