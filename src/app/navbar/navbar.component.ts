@@ -7,11 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  logo = "/assets/digimon-logo.png";
+  public logo: string = "/assets/digimon-logo.png";
+  public collapsed: boolean = true;
+  public dropped: boolean = true;
 
   constructor() { }
 
+  drop(): void {
+    this.dropped = !this.dropped;
+  }
+
+  undrop(): void {
+    this.dropped = true;
+  }
+
   ngOnInit(): void {
+    
   }
 
 }

@@ -1,0 +1,8 @@
+.nav-link, .dropdown-item {
+    
+    &:focus {
+        //color: green !important;
+        font-weight: 600;
+    }
+}
+

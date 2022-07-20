@@ -1,40 +1,42 @@
 <header>
-    
-    <nav class="navbar navbar-expand-md navbar-light ">
-      <div class="container-fluid">
-        <a class="navbar-brand" routerLink="">
-          <img [src]="logo" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-          DIGIMON</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" routerLink="">
-                Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="digidex">
-                DigiDex</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="table">Table</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" routerLink="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-md navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">
+        <img [src]="logo" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+        DIGIMON</a>
+      <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
+        aria-label="Toggle navigation" (click)="collapsed = !collapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" routerLink="" (click)=undrop()>
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="digidex" (click)=undrop()>
+              DigiDex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="table" (click)=undrop()>Table</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link
+              dropdown-toggle" id="navbarDropdown" role="button"  aria-expanded="false" (click)=drop() [style.font-weight]="dropped ? '400' : '600'">
+              by level
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" [style.display]="dropped ? 'none' : 'block'">
+              <li><a class="dropdown-item" routerLink="/digidex/Fresh">Fresh</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/In Training">In Training</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/Rookie">Rookie</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/Champion">Champion</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/Ultimate">Ultimate</a></li>
+              <li><a class="dropdown-item" routerLink="/digidex/Mega">Mega</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    
-</header> 
+    </div>
+  </nav>
+</header>

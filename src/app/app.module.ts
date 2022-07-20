@@ -18,7 +18,7 @@ import { DigimonTableComponent } from './digimon-table/digimon-table.component';
     DigimonHomeComponent,
     DigimonIndexComponent,
     DigimonLevelComponent,
-    DigimonTableComponent
+    DigimonTableComponent,
   ],
   imports: [
     BrowserModule,
