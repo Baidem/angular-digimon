@@ -9,3 +9,13 @@ $d-bg-d5: darken($default-background, 5%);
 $d-bg-d15: darken($default-background, 15%);
 
 $d-txt-blk: #212529;
+
+$default-accent: #f0997f;
+
+$a-bg-l10: lighten($default-accent, 10%);
+$a-bg-l15: lighten($default-accent, 15%);
+$a-bg-l20: lighten($default-accent, 20%);
+$a-bg-l25: lighten($default-accent, 25%);
+
+$a-bg-d5: darken($default-accent, 5%);
+$a-bg-d15: darken($default-accent, 15%);
