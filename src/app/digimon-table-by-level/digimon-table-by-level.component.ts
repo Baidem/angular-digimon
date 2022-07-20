@@ -11,11 +11,16 @@ import { HttpDigimonService } from 'src/services/http-digimon.service';
 export class DigimonTableByLevelComponent implements OnInit {
 
   digimons: Array<Digimon> = [];
+  public logo: string = "/assets/digimon-logo.png";
 
   constructor(
     private httpDigimon: HttpDigimonService,
     private activatedRoute: ActivatedRoute
   ) { }
+
+  imagePop() {
+
+  }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {

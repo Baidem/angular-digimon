@@ -16,8 +16,8 @@
           <tbody>
             <ng-container *ngFor="let digimon of digimons">
                 <tr>
-                    <td>{{digimon.name}}</td>
-                    <td>{{digimon.img}}</td>
+                  <td class="pointer" routerLink="/digidex/card/{{digimon.name}}">{{digimon.name}}</td>
+                  <td class="pointer" routerLink="/digidex/card/{{digimon.name}}">{{digimon.img}}</td>
                     <td class="pointer" routerLink="/digidex/table/{{digimon.level}}">{{digimon.level}}</td>
                 </tr>
 
