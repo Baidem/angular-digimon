@@ -6,8 +6,8 @@ body {
     background: $d-bg-l10;
 
 }
-.card {
-    background: $a-bg-l25;
+.card, .bg-card {
+    background: $d-bg-d15;
 }
 
 .btn-primary {
@@ -30,4 +30,13 @@ body {
 
 .yellowgreen {
     background: yellowgreen;
+}
+
+.margin-auto {
+    margin: auto ;
+}
+
+.ngb-carousel {
+    display: block;
+    margin: auto;
 }
