@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Digimon } from 'src/models/digimon';
 import { HttpDigimonService } from 'src/services/http-digimon.service';
 
@@ -11,11 +12,19 @@ import { HttpDigimonService } from 'src/services/http-digimon.service';
 export class DigimonCarouselComponent implements OnInit {
 
   digimons: Array<Digimon> = [];
+  public maxWidthStyle: string = 'max-width: 300px;';
+
 
   constructor(
     private httpDigimon: HttpDigimonService,
-    public router: Router
-  ) { }
+    public router: Router,
+    config: NgbCarouselConfig
+  ) {
+    config.interval = 5000;  
+    config.wrap = true;  
+    config.keyboard = false;  
+    config.pauseOnHover = false;  
+   }
 
 
   ngOnInit(): void {

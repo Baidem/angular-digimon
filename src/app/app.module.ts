@@ -12,7 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DigimonTableComponent } from './digimon-table/digimon-table.component';
 import { DigimonTableByLevelComponent } from './digimon-table-by-level/digimon-table-by-level.component';
 import { DigimonCarouselComponent } from './digimon-carousel/digimon-carousel.component';
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DigimonCarouselComponent } from './digimon-carousel/digimon-carousel.co
     DigimonTableComponent,
     DigimonTableByLevelComponent,
     DigimonCarouselComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,7 @@ import { DigimonCarouselComponent } from './digimon-carousel/digimon-carousel.co
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    // NgbModule
+    NgbModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
