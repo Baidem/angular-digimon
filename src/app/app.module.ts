@@ -14,6 +14,7 @@ import { DigimonTableByLevelComponent } from './digimon-table-by-level/digimon-t
 import { DigimonCarouselComponent } from './digimon-carousel/digimon-carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
+import { SandBoxComponent } from './sand-box/sand-box.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     DigimonTableByLevelComponent,
     DigimonCarouselComponent,
     CarouselComponent,
+    SandBoxComponent,
   ],
   imports: [
     BrowserModule,

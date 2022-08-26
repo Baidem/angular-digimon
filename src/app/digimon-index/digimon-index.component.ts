@@ -21,6 +21,8 @@ export class DigimonIndexComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.httpDigimon.getDigimons().subscribe((jsonDigimon) => {
+      console.log(jsonDigimon);
+      
       this.digimons = jsonDigimon;
     });
   }

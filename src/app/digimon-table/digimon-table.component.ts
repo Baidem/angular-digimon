@@ -17,6 +17,11 @@ export class DigimonTableComponent implements OnInit, AfterViewInit, OnDestroy {
     public router: Router
   ) { }
 
+  clickName(): void {
+    console.log("click");
+    
+  }
+
   ngOnInit(): void {
     this.httpDigimon.getDigimons().subscribe((jsonDigimon) => {
       this.digimons = jsonDigimon;
